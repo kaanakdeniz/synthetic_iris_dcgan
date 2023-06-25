@@ -72,3 +72,7 @@ Here's a brief overview of the key components:
     - __verieye.ipynb__ -> Contains the codes for the graph of matching score distributions of matched and unmatched irises.
 
 [VeriEye]: https://www.neurotechnology.com/verieye.html
+
+### Example Synthetic Iris Images
+
+![Example Synthetic Iris Images](./data/figures/sample_of_bests.png)
