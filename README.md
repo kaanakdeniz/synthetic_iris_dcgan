@@ -75,4 +75,4 @@ Here's a brief overview of the key components:
 
 ### Example Synthetic Iris Images
 
-![Example Synthetic Iris Images](./data/figures/sample_of_bests.png)
+![Example Synthetic Iris Images](public/examples.png)
