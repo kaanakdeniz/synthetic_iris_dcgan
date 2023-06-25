@@ -2,9 +2,11 @@
 
 This repository contains the code and resources for our research project, "**Sample Picking in Synthetic Irises for Wolf Attacks**." Our study aims to identify and select synthetic iris images that are most likely to succeed in bypassing iris recognition systems, often known as "**wolf attacks.**"
 
-<figure align="center">
+<figure>
+<p align="center">
   <img src="public/examples.png" alt="" width="500"/>
   <figcaption><em>Fig.1</em> Examples of generated synthetic iris images</figcaption>
+</p>
 </figure>
 
 Our approach involves:
