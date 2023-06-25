@@ -2,6 +2,10 @@
 
 This repository contains the code and resources for our research project, "**Sample Picking in Synthetic Irises for Wolf Attacks**." Our study aims to identify and select synthetic iris images that are most likely to succeed in bypassing iris recognition systems, often known as "**wolf attacks.**"
 
+<p align="center">
+  <img src="public/examples.png" alt="Examples of synthetically generated iris images" width="400"/>
+</p>
+
 Our approach involves:
 
 1. **Generating Synthetic Iris Images**: We use Deep Convolutional Generative Adversarial Networks (**DCGAN**) to create a wide range of synthetic iris images.
@@ -72,7 +76,3 @@ Here's a brief overview of the key components:
     - __verieye.ipynb__ -> Contains the codes for the graph of matching score distributions of matched and unmatched irises.
 
 [VeriEye]: https://www.neurotechnology.com/verieye.html
-
-### Example Synthetic Iris Images
-
-![Example Synthetic Iris Images](public/examples.png)
