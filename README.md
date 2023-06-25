@@ -2,9 +2,10 @@
 
 This repository contains the code and resources for our research project, "**Sample Picking in Synthetic Irises for Wolf Attacks**." Our study aims to identify and select synthetic iris images that are most likely to succeed in bypassing iris recognition systems, often known as "**wolf attacks.**"
 
-<p align="center">
-  <img src="public/examples.png" alt="Examples of synthetically generated iris images" width="400"/>
-</p>
+<figure align="center">
+  <img src="public/examples.png" alt="" width="500"/>
+  <figcaption><em>Fig.1</em> Examples of generated synthetic iris images</figcaption>
+</figure>
 
 Our approach involves:
 
@@ -76,3 +77,11 @@ Here's a brief overview of the key components:
     - __verieye.ipynb__ -> Contains the codes for the graph of matching score distributions of matched and unmatched irises.
 
 [VeriEye]: https://www.neurotechnology.com/verieye.html
+
+## Citation
+
+If you find this repository useful in your research, please cite our paper:
+
+```
+Paper has not been published yet.
+```
