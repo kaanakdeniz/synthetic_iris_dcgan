@@ -4,8 +4,9 @@ This repository contains the code and resources for our research project, "**Sam
 
 <figure>
 <p align="center">
-  <img src="public/examples.png" alt="" width="500"/>
-  <figcaption><em>Fig.1</em> Examples of generated synthetic iris images</figcaption>
+  <img src="public/examples.png" alt=""/>
+  <center><figcaption>Examples of generated synthetic iris images
+  </figcaption></center>
 </p>
 </figure>
 
@@ -23,7 +24,7 @@ We put our hypothesis to the test that this specifically curated set would be mo
 
 Please feel free to explore the code and the documentation, and we appreciate any feedback or contributions to improve this project.
 
-*Note*: The [VeriEye] system was utilized for conducting presentation attacks. Additionally, the same system was employed to extract irises from images.
+_Note_: The [VeriEye] system was utilized for conducting presentation attacks. Additionally, the same system was employed to extract irises from images.
 
 ## Requirements
 
@@ -36,47 +37,50 @@ pip install requirements.txt
 ```
 
 ### Downloads
-**Data**: Will be added soon!<!-- [Click here]() to download data. -->
 
-**Models**: Will be added soon!<!-- [Click here]() to download models. -->
+**Data**: [Click here](https://mega.nz/file/wjJ1waZA#or0ZGX5yIGXOswVUoiVNXI7xie0AWesQFAL--aPlJsU) to download data.
 
+**Models**: [Click here](https://mega.nz/file/F2BwnKwK#2QxfyN--om5JgyyW9flBVAi4MF-pDm9gjn2IZZfGnmM) to download models.
 
 ## Content
 
 Here's a brief overview of the key components:
 
-- **Data**: Contains the synthetic and real iris images used for the study, along with associated information like PAD scores and match scores.
-    - __figures__ -> Figures used in the paper.
+-   **Data**: Contains the synthetic and real iris images used for the study, along with associated information like PAD scores and match scores.
 
-    - __info__
-        - __synthetic.json__ -> Contains the pad scores of synthetic images, match scores with iris images in the training dataset, whether they passed the pad and data screening, and their prop_of_i (probability of being an impostor).
-        - __synthetic_with_pairs.json__ -> Contains the same data as synthetic.json, with the additional information on which training iris image the iris match scores belong to.
-        - __train.json__ -> Contains the fold, identity, iris boundary points determined by VeriEye, and pad score data of the images in the training set.
+    -   **figures** -> Figures used in the paper.
 
-        - __synthetic__ -> Contains synthetic iris images generated in all folds.
-            - Naming: X_Y, X => Fold, Y => Image number
+    -   **info**
 
-        - __train__ -> Contains iris images in the training dataset, images are foldered based on identity. Left and right eyes are taken as separate identities.
+        -   **synthetic.json** -> Contains the pad scores of synthetic images, match scores with iris images in the training dataset, whether they passed the pad and data screening, and their prop_of_i (probability of being an impostor).
+        -   **synthetic_with_pairs.json** -> Contains the same data as synthetic.json, with the additional information on which training iris image the iris match scores belong to.
+        -   **train.json** -> Contains the fold, identity, iris boundary points determined by VeriEye, and pad score data of the images in the training set.
 
-- **Models**: Contains the trained GAN models for each fold of data.
-- **Pad**: Contains the D-NetPad algorithm and its trained model, which is used for obtaining PAD scores.
-- **Notebooks**: Includes all the notebooks used for the experiments. Each notebook serves a different purpose, including data preparation, attack elimination, experiment execution, and result production.
+        -   **synthetic** -> Contains synthetic iris images generated in all folds.
 
-    - __attack_elimination.ipynb__ -> Calculates the probability of synthetic iris images being impostors. Contains codes for attack elimination processes. The 400 with the highest probability are considered to have passed the elimination.
+            -   Naming: X_Y, X => Fold, Y => Image number
 
-    - __attack_experiments.ipynb__ -> Contains codes for producing the results of attack experiments.
+        -   **train** -> Contains iris images in the training dataset, images are foldered based on identity. Left and right eyes are taken as separate identities.
 
-    - __pad_elimination.ipynb__ -> Contains codes for synthetic image generation and pad elimination processes. The elimination process is carried out by selecting a random point within the normal distribution. (Rejection sampling)
+-   **Models**: Contains the trained GAN models for each fold of data.
+-   **Pad**: Contains the D-NetPad algorithm and its trained model, which is used for obtaining PAD scores.
+-   **Notebooks**: Includes all the notebooks used for the experiments. Each notebook serves a different purpose, including data preparation, attack elimination, experiment execution, and result production.
 
-    - __pad_experiments.ipynb__ -> Contains codes for producing the results of PAD experiments.
+    -   **attack_elimination.ipynb** -> Calculates the probability of synthetic iris images being impostors. Contains codes for attack elimination processes. The 400 with the highest probability are considered to have passed the elimination.
 
-    - __prep.ipynb, prepare_dataset.ipynb__ -> Contains codes for data preparation.
+    -   **attack_experiments.ipynb** -> Contains codes for producing the results of attack experiments.
 
-    - __report.ipynb__ -> Contains codes needed to produce data and figures for reporting.
+    -   **pad_elimination.ipynb** -> Contains codes for synthetic image generation and pad elimination processes. The elimination process is carried out by selecting a random point within the normal distribution. (Rejection sampling)
 
-    - __training.ipynb__ -> Contains codes for training the GAN model.
+    -   **pad_experiments.ipynb** -> Contains codes for producing the results of PAD experiments.
 
-    - __verieye.ipynb__ -> Contains the codes for the graph of matching score distributions of matched and unmatched irises.
+    -   **prep.ipynb, prepare_dataset.ipynb** -> Contains codes for data preparation.
+
+    -   **report.ipynb** -> Contains codes needed to produce data and figures for reporting.
+
+    -   **training.ipynb** -> Contains codes for training the GAN model.
+
+    -   **verieye.ipynb** -> Contains the codes for the graph of matching score distributions of matched and unmatched irises.
 
 [VeriEye]: https://www.neurotechnology.com/verieye.html
 
