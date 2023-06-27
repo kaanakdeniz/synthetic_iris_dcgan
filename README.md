@@ -5,8 +5,6 @@ This repository contains the code and resources for our research project, "**Sam
 <figure>
 <p align="center">
   <img src="public/examples.png" alt=""/>
-  <center><figcaption>Examples of generated synthetic iris images
-  </figcaption></center>
 </p>
 </figure>
 
@@ -56,11 +54,11 @@ Here's a brief overview of the key components:
         -   **synthetic_with_pairs.json** -> Contains the same data as synthetic.json, with the additional information on which training iris image the iris match scores belong to.
         -   **train.json** -> Contains the fold, identity, iris boundary points determined by VeriEye, and pad score data of the images in the training set.
 
-        -   **synthetic** -> Contains synthetic iris images generated in all folds.
+    -   **synthetic** -> Contains synthetic iris images generated in all folds.
 
-            -   Naming: X_Y, X => Fold, Y => Image number
+        -   Naming: X_Y, X => Fold, Y => Image number
 
-        -   **train** -> Contains iris images in the training dataset, images are foldered based on identity. Left and right eyes are taken as separate identities.
+    -   **train** -> Contains iris images in the training dataset, images are foldered based on identity. Left and right eyes are taken as separate identities.
 
 -   **Models**: Contains the trained GAN models for each fold of data.
 -   **Pad**: Contains the D-NetPad algorithm and its trained model, which is used for obtaining PAD scores.
