@@ -7,6 +7,7 @@ This repository contains the code and resources for our research project, "**Sam
   <img src="public/examples.png" alt=""/>
 </p>
 </figure>
+<p align="center" >Examples of generated synthetic iris images</p>
 
 Our approach involves:
 
