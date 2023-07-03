@@ -73,7 +73,7 @@ Here's a brief overview of the key components:
 
     -   **pad_experiments.ipynb** -> Contains codes for producing the results of PAD experiments.
 
-    -   **prep.ipynb, prepare_dataset.ipynb** -> Contains codes for data preparation.
+    -   **prep.ipynb** -> Contains codes for data preparation.
 
     -   **report.ipynb** -> Contains codes needed to produce data and figures for reporting.
 
