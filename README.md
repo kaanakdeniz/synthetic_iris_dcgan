@@ -29,11 +29,8 @@ _Note_: The [VeriEye] system was utilized for conducting presentation attacks. A
 
 `Python version = 3.9.1`
 
-```shell
-python -m venv env
-env/Scripts/Activate
-pip install requirements.txt
-```
+1. Use `pip install poetry` command to install poetry if you don't have it.
+2. Install all the necessary packages using `poetry install` command.
 
 ### Downloads
 
@@ -52,7 +49,7 @@ Here's a brief overview of the key components:
     -   **info**
 
         -   **synthetic.json** -> Contains the pad scores of synthetic images, match scores with iris images in the training dataset, whether they passed the pad and data screening, and their prop_of_i (probability of being an impostor).
-        -   **synthetic_with_pairs.json** -> Contains the same data as synthetic.json, with the additional information on which training iris image the iris match scores belong to.
+        -   **synthetic_pairs.json** -> Contains the same data as synthetic.json, with the additional information on which training iris image the iris match scores belong to.
         -   **train.json** -> Contains the fold, identity, iris boundary points determined by VeriEye, and pad score data of the images in the training set.
 
     -   **synthetic** -> Contains synthetic iris images generated in all folds.
@@ -72,8 +69,6 @@ Here's a brief overview of the key components:
     -   **pad_elimination.ipynb** -> Contains codes for synthetic image generation and pad elimination processes. The elimination process is carried out by selecting a random point within the normal distribution. (Rejection sampling)
 
     -   **pad_experiments.ipynb** -> Contains codes for producing the results of PAD experiments.
-
-    -   **prep.ipynb** -> Contains codes for data preparation.
 
     -   **report.ipynb** -> Contains codes needed to produce data and figures for reporting.
 
