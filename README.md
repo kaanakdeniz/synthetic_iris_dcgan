@@ -83,5 +83,13 @@ Here's a brief overview of the key components:
 If you find this repository useful in your research, please cite our paper:
 
 ```
-Paper has not been published yet.
+@INPROCEEDINGS{10223964,
+  author={Akdeniz, Eyüp Kaan and Erdoğmuş, Nesli},
+  booktitle={2023 31st Signal Processing and Communications Applications Conference (SIU)}, 
+  title={Sample Picking in Synthetic Irides for Wolf Attacks}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-4},
+  doi={10.1109/SIU59756.2023.10223964}}
 ```
